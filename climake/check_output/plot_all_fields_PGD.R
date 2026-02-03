@@ -7,14 +7,14 @@ if (length(args)==0) {
 }
 
 # In case you want to plot a specific PGD file:
-pgdfilename <- "/dodrio/scratch/projects/2022_200/project_output/RMIB-UGent/vsc46613_amber/Project_CitiesandPrecipitation/climate_simulations/runs/code_to_run_model/PGD-clim-Tier1/climake/check_output/PGD_Wout.fa"
-pdffilename <- "/dodrio/scratch/projects/2022_200/project_output/RMIB-UGent/vsc46613_amber/Project_CitiesandPrecipitation/climate_simulations/runs/code_to_run_model/PGD-clim-Tier1/climake/check_output/PGD_Wout.pdf"
+#pgdfilename <- "/dodrio/scratch/projects/2022_200/project_output/RMIB-UGent/vsc46613_amber/Project_CitiesandPrecipitation/climate_simulations/runs/code_to_run_model/PGD-clim-Tier1/climake/check_output/PGD_Wout.fa"
+#pdffilename <- "/dodrio/scratch/projects/2022_200/project_output/RMIB-UGent/vsc46613_amber/Project_CitiesandPrecipitation/climate_simulations/runs/code_to_run_model/PGD-clim-Tier1/climake/check_output/PGD_Wout.pdf"
 
-# In case uou want to plot a PGD file from the output folder:
-#output_dir <- "/dodrio/scratch/projects/2022_200/project_output/RMIB-UGent/vsc46613_amber/Project_CitiesandPrecipitation/climate_simulations/runs/code_to_run_model/PGD-clim-Tier1/climake/outputFiles"
-#output_file_name <- "PGD.fa"
-#pgdfilename <- paste(output_dir, args[1], output_file_name, sep="/")
-#pdffilename <- paste(args[1], "_PGD.pdf", sep="")
+# In case you want to plot a PGD file from the output folder:
+output_dir <- "/dodrio/scratch/projects/2022_200/project_output/RMIB-UGent/vsc46613_amber/Project_CitiesandPrecipitation/climate_simulations/runs/code_to_run_model/PGD-clim-Tier1/climake/outputFiles"
+output_file_name <- "PGD.fa"
+pgdfilename <- paste(output_dir, args[1], output_file_name, sep="/")
+pdffilename <- paste(args[1], "_PGD.pdf", sep="")
 
 print(pgdfilename)
 print(pdffilename)
